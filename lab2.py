@@ -55,7 +55,7 @@ def main (  ): #{
                 prepCount += 1
             if 'CONJ' in tagTokens[i].tag:
                 conjCount += 1
-    print('Найдено предогов: ' + str(prepCount) + '   Найдено союзов: ' + str(conjCount))
+    print('Найдено предлогов: ' + str(prepCount) + '   Найдено союзов: ' + str(conjCount))
 
     for i in range(0, len(tagTokens), 1):
         if not('PREP' in tagTokens[i].tag) and not('CONJ' in tagTokens[i].tag):
